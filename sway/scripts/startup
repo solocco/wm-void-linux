@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+## Autostart Programs
+#exec pipewire &
+#exec wireplumber &
+# Kill already running process
+_ps=(waybar mako)
+for _prs in "${_ps[@]}"; do
+	if [[ `pidof ${_prs}` ]]; then
+		killall -9 ${_prs}
+	fi
+done
+
+if ! pgrep -x "polkit-gnome-authentication-agent-1" >/dev/null; then
+    /usr/libexec/polkit-gnome-authentication-agent-1 &
+fi
+
+
+# Set wallpaper
+~/.config/sway/scripts/wallpaper &
+
+# Apply themes
+~/.config/sway/scripts/gtkthemes &
+
+# Lauch notification daemon (mako)
+~/.config/sway/scripts/notifications &
+
+# Lauch statusbar (waybar)
+~/.config/sway/scripts/statusbar &
+
+# Start network manager applet
+nm-applet --indicator &
+
+# Start mpd
+#exec mpd &

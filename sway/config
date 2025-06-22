@@ -1,0 +1,8 @@
+# Load config files
+include ~/.config/sway/config.d/vars
+exec ~/.config/sway/scripts/startup
+include ~/.config/sway/config.d/*
+exec autotiling -l 2
+exec_always dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+
+# vim:set ft=conf:

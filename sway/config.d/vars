@@ -1,0 +1,13 @@
+# Variables
+
+set {
+    $mod Mod4
+    $left h
+    $down j
+    $up k
+    $right l
+  }
+
+focus_follows_mouse no
+
+# vim:set ft=conf:
