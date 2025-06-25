@@ -3,7 +3,7 @@
   "id": "main-bar", 				// Waybar id
   "name": "top",
   "layer": "top",
-  "position": "bottom",
+  "position": "top",
   "mode": "",
   "margin-top": 5,
   "margin-left": 5,

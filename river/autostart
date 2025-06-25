@@ -2,7 +2,7 @@
 
 ## Autostart Programs
 # WLR-portals need this part
-dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river
+#dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river
 
 # Kill already running process
 _ps=(waybar mako)

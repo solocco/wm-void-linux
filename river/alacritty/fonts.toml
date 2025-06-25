@@ -2,22 +2,22 @@
 
 [font]
 ## Font size in points.
-size = 10
+size = 12
 
 ## When true, Alacritty will use a custom built-in font for box drawing characters and powerline symbols.
 builtin_box_drawing = true
 
 ## Normal font family.
 [font.normal]
-family = "SF Mono Nerd Font Medium"
+family = "AporeticSansM Nerd Font Medium"
 
 ## If the family is not specified, it will fall back to the value specified for the normal font.
 [font.bold]
-family = "SF Mono Nerd Font"
+family = "AporeticSansM Nerd Font"
 
 ## If the family is not specified, it will fall back to the value specified for the normal font.
 [font.italic]
-family = "SF Mono Nerd Font"
+family = "AporeticSansM Nerd Font"
 
 ## If the family is not specified, it will fall back to the value specified for the normal font.
 [font.bold_italic]

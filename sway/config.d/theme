@@ -2,15 +2,15 @@
 corner_radius 4
 blur disable
 titlebar_separator disable
-shadows enable
+shadows disable
 shadows_on_csd enable
 shadow_blur_radius 50
 shadow_color #0000007F
 shadow_inactive_color #00000000
 
 # Font
-font SF Iosevka Comfy Medium 11
-font pango:Iosevka Comfy Medium 11
+font AporeticSansM Medium 11
+font pango:AporeticSansM Medium 11
 
 title_align center
 default_border pixel 1
@@ -19,7 +19,7 @@ default_floating_border pixel 1
 # Gaps
 smart_gaps off # on|off|toggle|inverse_outer
 gaps outer 20
-gaps inner 0
+gaps inner 20
 
 # Titlebar and border configuration
 # SwayFX BUG: https://github.com/WillPower3309/swayfx/issues/201

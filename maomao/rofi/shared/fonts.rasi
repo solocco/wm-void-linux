@@ -3,5 +3,5 @@
 /* Text Font */
 
 * {
-    font: "Caskaydia Cove Nerd Font Medium 11";
+    font: "AporeticSansM Nerd Font Medium 12";
 }
