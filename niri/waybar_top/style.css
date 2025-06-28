@@ -3,7 +3,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "Iosevka Comfy";
+    font-family: "Cid Mono Nerd Font";
     font-size: 15px;
     font-weight: bold;
     min-height: 0;
@@ -36,7 +36,7 @@ tooltip label {
 #workspaces button {
     padding: 0px 8px 0px 8px;
     border-radius: 4px;
- 	  min-width: 1px;
+ 	min-width: 1px;
     margin-left: 0px;
     margin-right: 0px;
     color: alpha(@foreground, 0.3);
@@ -44,11 +44,11 @@ tooltip label {
 }
 
 #workspaces button.focused {
-    background: transparent;
-    border-width: 1px;
+    background: @foreground;
+    border-width: 0px;
     border-color: @foreground;
     border-style: solid; 
-    color: @foreground;
+    color: @background;
 }
 
 #workspaces button.urgent {
@@ -80,6 +80,8 @@ tooltip label {
 #custom-menu,
 #temperature,
 #cpu,
+#custom-temp,
+#custom-window,
 #memory,
 #clock,
 #bluetooth,

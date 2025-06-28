@@ -10,10 +10,9 @@
   "margin-right": 5,
   "height": 30,
   "spacing": 10,
-  "modules-left": ["niri/workspaces", "clock"],
-  "modules-center": ["niri/window"],
+  "modules-left": ["niri/workspaces", "clock", "custom/window"],
   "modules-right": [
-    "temperature",
+    "custom/temp",
     "backlight",
     "pulseaudio",
     "battery",
@@ -36,7 +35,7 @@
   },
 
   "memory": {
-    "format": "{}% 󰔚",
+    "format": "{used:0.1f}G 󰔚",
   },
 
   "battery": {
@@ -71,10 +70,25 @@
     "disable-click": true,
   },
 
-  "river/window": {
-    "format": "{}",
-    "max-length": 75,
-  },
+  "niri/window": {
+  "format": "> {}",
+  "max-length": 80
+},
+
+  "custom/temp": {
+  "exec": "~/.config/niri/scripts/get-temp.sh",
+  "interval": 5,
+  "format": "{} ",
+  "return-type": "text"
+},
+
+  "custom/window": {
+  "exec": "~/.config/niri/scripts/get-active-window.sh",
+  "interval": 1,
+  "format": "{}",
+  "return-type": "text"
+},
+
 
   "temperature": {
   "hwmon-path": "/sys/class/hwmon/hwmon10/temp1_input",
