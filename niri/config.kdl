@@ -183,7 +183,7 @@ overview {
 cursor {
    hide-when-typing
    xcursor-theme "breeze_cursors"
-    xcursor-size 24
+   xcursor-size 48
 }
 
 layer-rule {

@@ -4,7 +4,7 @@
 
 THEME='Gruvbox-Material-Dark'
 ICONS='Gruvbox-Material-Dark'
-FONT='AporeticSansM Nerd Font Medium 13'
+FONT='Cid Mono Nerd Font Medium 13'
 CURSOR='breeze_cursors'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'

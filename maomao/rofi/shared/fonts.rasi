@@ -3,5 +3,5 @@
 /* Text Font */
 
 * {
-    font: "AporeticSansM Nerd Font Medium 12";
+    font: "Cid Mono Nerd Font Medium 12";
 }
